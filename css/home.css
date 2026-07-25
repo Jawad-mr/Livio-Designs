@@ -1,0 +1,95 @@
+/* ===================================================================
+   HOME PAGE
+=================================================================== */
+
+.hero {
+  padding: 60px 0 80px;
+  position: relative;
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+}
+.hero-eyebrow-row {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 40px;
+}
+.hero-title-wrap { position: relative; }
+.hero h1 {
+  font-size: clamp(3.2rem, 9vw, 7.4rem);
+  letter-spacing: -0.02em;
+}
+.hero h1 .reg-wrap { display: block; }
+.hero-sub { max-width: 560px; font-size: 1.15rem; margin: 32px 0 44px; }
+.hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+
+.hero-crops { position: relative; }
+
+/* Marquee of chip codes */
+.chip-marquee {
+  border-top: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink);
+  padding: 18px 0; overflow: hidden; position: relative; background: var(--stock-2);
+}
+.chip-marquee-track { display: flex; gap: 56px; white-space: nowrap; width: max-content; animation: cmarquee 26s linear infinite; }
+.chip-marquee-track span { font-family: var(--font-mono); font-size: 0.8rem; display: flex; align-items: center; gap: 10px; }
+.chip-marquee-track .dot { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+@keyframes cmarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* Chip rack — draggable feel via hover lift, click-through to services */
+.rack-grid { grid-template-columns: repeat(3, 1fr); }
+.rack-chip {
+  padding: 32px 26px 26px;
+  display: flex; flex-direction: column; height: 100%;
+  transition: transform 0.3s cubic-bezier(.2,.8,.3,1), box-shadow 0.3s;
+  cursor: pointer;
+}
+.rack-chip:hover { transform: translateY(-8px) rotate(-0.5deg); box-shadow: 6px 10px 0 rgba(10,10,10,0.9); }
+.rack-swatch { width: 100%; height: 90px; border-radius: 2px; margin-bottom: 22px; position: relative; overflow: hidden; }
+.rack-swatch .code-tag {
+  position: absolute; bottom: 8px; left: 8px;
+  font-family: var(--font-mono); font-size: 0.62rem; color: var(--stock);
+  background: rgba(10,10,10,0.35); padding: 3px 7px; border-radius: 2px;
+}
+.rack-chip h3 { margin-bottom: 8px; font-size: 1.3rem; }
+.rack-chip p { font-size: 0.9rem; flex-grow: 1; margin-bottom: 18px; }
+.rack-chip .rack-link { font-family: var(--font-mono); font-size: 0.76rem; text-transform: uppercase; display: flex; align-items: center; gap: 6px; }
+
+/* Work preview strip */
+.work-strip { grid-template-columns: repeat(2, 1fr); }
+.work-tile {
+  position: relative; overflow: hidden; aspect-ratio: 5/4;
+  border: 1.5px solid var(--ink);
+}
+.work-tile img, .work-tile .placeholder-art { width: 100%; height: 100%; object-fit: cover; display: block; }
+.work-tile .placeholder-art { display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 3rem; color: var(--stock); }
+.work-tile-overlay {
+  position: absolute; inset: 0; background: rgba(10,10,10,0.82);
+  display: flex; flex-direction: column; justify-content: flex-end; padding: 24px;
+  opacity: 0; transition: opacity 0.3s ease;
+}
+.work-tile:hover .work-tile-overlay { opacity: 1; }
+.work-tile-overlay .wt-cat { font-family: var(--font-mono); font-size: 0.7rem; color: var(--stock); opacity: 0.6; margin-bottom: 6px; }
+.work-tile-overlay h4 { color: var(--stock); font-size: 1.3rem; }
+
+/* Stats band */
+.stats-band { border-top: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); background: var(--ink); }
+.stats-grid { grid-template-columns: repeat(4, 1fr); }
+.stat-cell { padding: 48px 24px; text-align: center; border-right: 1px solid rgba(255,253,247,0.15); }
+.stat-cell:last-child { border-right: none; }
+.stat-cell .num { font-family: var(--font-display); font-size: 2.6rem; color: var(--stock); font-weight: 600; }
+.stat-cell .num .accent { color: var(--yellow); }
+.stat-cell .lbl { font-family: var(--font-mono); font-size: 0.72rem; color: rgba(255,253,247,0.6); margin-top: 8px; text-transform: uppercase; letter-spacing: 0.04em; }
+
+.cta-band { padding: 110px 0; text-align: center; }
+.cta-band h2 { max-width: 720px; margin: 0 auto 20px; }
+.cta-band p { max-width: 520px; margin: 0 auto 40px; font-size: 1.08rem; }
+.cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+@media (max-width: 920px) {
+  .rack-grid, .work-strip, .stats-grid { grid-template-columns: 1fr; }
+  .stat-cell { border-right: none; border-bottom: 1px solid rgba(255,253,247,0.15); }
+  .stat-cell:last-child { border-bottom: none; }
+  .hero { min-height: auto; padding: 40px 0 60px; }
+}
+@media (min-width: 640px) and (max-width: 920px) {
+  .rack-grid { grid-template-columns: repeat(2,1fr); }
+}
