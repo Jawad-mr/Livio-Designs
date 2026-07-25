@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="800" height="550">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EE"/>
+      <stop offset="100%" stop-color="#F2E6D8"/>
+    </linearGradient>
+    <linearGradient id="bag" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C7A9"/>
+      <stop offset="100%" stop-color="#CBB093"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0A0A0A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="550" fill="url(#bg)"/>
+  <path d="M0 0h800v550H0z" fill="none" stroke="rgba(10,10,10,0.08)" stroke-width="1"/>
+  
+  <!-- Studio Proof Grid Lines -->
+  <line x1="50" y1="0" x2="50" y2="550" stroke="#FF5A1F" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.3"/>
+  <line x1="750" y1="0" x2="750" y2="550" stroke="#FF5A1F" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.3"/>
+  <line x1="0" y1="50" x2="800" y2="50" stroke="#FF5A1F" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.3"/>
+
+  <!-- Bakery Bag Mockup -->
+  <g filter="url(#shadow)" transform="translate(180, 80)">
+    <rect x="0" y="0" width="260" height="360" rx="8" fill="url(#bag)"/>
+    <path d="M0 0l260 0-30 30H30Z" fill="#B89B7E" opacity="0.4"/>
+    <!-- Stamp Seal -->
+    <circle cx="130" cy="180" r="65" fill="#FF5A1F"/>
+    <circle cx="130" cy="180" r="58" fill="none" stroke="#FFFDF7" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="130" y="165" text-anchor="middle" fill="#FFFDF7" font-family="serif" font-size="16" font-weight="bold" letter-spacing="2">SWEET CRUMB</text>
+    <text x="130" y="190" text-anchor="middle" fill="#FFFDF7" font-family="sans-serif" font-size="10" letter-spacing="3">ARTISAN BAKERY</text>
+    <text x="130" y="210" text-anchor="middle" fill="#FFFDF7" font-family="monospace" font-size="9" opacity="0.8">EST. 2026</text>
+  </g>
+
+  <!-- Coffee Cup Mockup -->
+  <g filter="url(#shadow)" transform="translate(480, 160)">
+    <path d="M20 0h140l-15 260H35z" fill="#FFFDF7"/>
+    <path d="M10 -15h160v25H10z" fill="#FF5A1F" rx="4"/>
+    <!-- Sleeve -->
+    <path d="M26 90h128l-7 100H33z" fill="#0A0A0A"/>
+    <text x="90" y="145" text-anchor="middle" fill="#FFFDF7" font-family="serif" font-size="14" font-weight="600" letter-spacing="1">Sweet Crumb</text>
+  </g>
+
+  <!-- Business Card -->
+  <g filter="url(#shadow)" transform="translate(100, 320) rotate(-8)">
+    <rect x="0" y="0" width="220" height="130" rx="4" fill="#0A0A0A"/>
+    <rect x="12" y="12" width="196" height="106" rx="2" fill="none" stroke="#FF5A1F" stroke-width="1.5"/>
+    <text x="30" y="55" fill="#FFFDF7" font-family="serif" font-size="18" font-weight="bold">Sweet Crumb.</text>
+    <text x="30" y="80" fill="#FF5A1F" font-family="monospace" font-size="9" letter-spacing="1">IDENTITY &amp; POS SYSTEM</text>
+    <text x="30" y="100" fill="#FFFDF7" font-family="monospace" font-size="8" opacity="0.6">PROOFS / SIG.014</text>
+  </g>
+
+  <!-- Spec Chip Tag -->
+  <rect x="24" y="24" width="160" height="32" rx="3" fill="#0A0A0A"/>
+  <circle cx="40" cy="40" r="7" fill="#FF5A1F"/>
+  <text x="56" y="44" fill="#FFFDF7" font-family="monospace" font-size="11" font-weight="600">LIVIO 014 — BRAND</text>
+</svg>

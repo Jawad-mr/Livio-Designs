@@ -244,12 +244,91 @@ p { color: var(--ink-soft); opacity: 0.88; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
 
+/* ===== Professional Keyframes & Micro-Animations ===== */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+
+@keyframes plateSnap {
+  0% { transform: scale(0.96) translate(0, 0); opacity: 0.7; }
+  50% { transform: scale(1.02) translate(-2px, -2px); }
+  100% { transform: scale(1) translate(0, 0); opacity: 1; }
+}
+
+@keyframes shimmerSlide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes marqueeInfinite {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Smooth Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  will-change: opacity, transform;
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible, body:not(.js-active) .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Panel & Card Hover Elevation */
 .panel {
   border: 1.5px solid var(--ink);
   border-radius: 2px;
   background: var(--stock);
   position: relative;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
 }
+@media (hover: hover) {
+  .panel:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(10,10,10,0.08);
+    border-color: var(--ink);
+  }
+}
+
+/* Button Animations */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+@media (hover: hover) {
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  .btn-primary:hover {
+    background: var(--cyan);
+    box-shadow: 4px 4px 0 var(--ink);
+  }
+  .btn-ghost:hover {
+    background: var(--ink);
+    color: var(--stock);
+  }
+}
+.btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Mobile Drawer Staggered Link Animation */
+.mobile-drawer.is-open .mobile-drawer-links a {
+  animation: plateSnap 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.mobile-drawer.is-open .mobile-drawer-links a:nth-child(1) { animation-delay: 0.05s; }
+.mobile-drawer.is-open .mobile-drawer-links a:nth-child(2) { animation-delay: 0.1s; }
+.mobile-drawer.is-open .mobile-drawer-links a:nth-child(3) { animation-delay: 0.15s; }
+.mobile-drawer.is-open .mobile-drawer-links a:nth-child(4) { animation-delay: 0.2s; }
+.mobile-drawer.is-open .mobile-drawer-links a:nth-child(5) { animation-delay: 0.25s; }
+.mobile-drawer.is-open .mobile-drawer-links a:nth-child(6) { animation-delay: 0.3s; }
+.mobile-drawer.is-open .mobile-drawer-links a:nth-child(7) { animation-delay: 0.35s; }
+.mobile-drawer.is-open .mobile-drawer-links a:nth-child(8) { animation-delay: 0.4s; }
 
 /* Top utility bar */
 .topbar {

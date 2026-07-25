@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="800" height="550">
+  <defs>
+    <linearGradient id="pineBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#19382E"/>
+      <stop offset="100%" stop-color="#0A1813"/>
+    </linearGradient>
+    <filter id="circuitGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#00AEEF" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="550" fill="url(#pineBg)"/>
+  
+  <!-- Circuit Grid Overlay -->
+  <g stroke="#2D5C4B" stroke-width="1" opacity="0.4">
+    <path d="M0 100h800M0 200h800M0 300h800M0 400h800"/>
+    <path d="M100 0v550M200 0v550M300 0v550M400 0v550M500 0v550M600 0v550M700 0v550"/>
+  </g>
+
+  <!-- Glowing Circuit Traces -->
+  <g stroke="#00AEEF" stroke-width="2.5" fill="none" filter="url(#circuitGlow)">
+    <path d="M150 150h200l50 50v150h150"/>
+    <path d="M650 100v120l-40 40H400"/>
+    <path d="M200 450V350l60-60h180"/>
+  </g>
+  
+  <!-- Nodes -->
+  <circle cx="150" cy="150" r="6" fill="#00AEEF"/>
+  <circle cx="400" cy="200" r="6" fill="#00AEEF"/>
+  <circle cx="550" cy="350" r="6" fill="#00AEEF"/>
+  <circle cx="650" cy="100" r="6" fill="#2D5C4B" stroke="#00AEEF" stroke-width="2"/>
+  <circle cx="200" cy="450" r="6" fill="#00AEEF"/>
+
+  <!-- Nexio Tech Brand Card Mockup -->
+  <g transform="translate(220, 140)">
+    <rect x="0" y="0" width="360" height="260" rx="10" fill="#0A0A0A" stroke="#00AEEF" stroke-width="2"/>
+    <!-- Logo Symbol -->
+    <path d="M50 50h40l30 30v40l-30 30H50Z" fill="none" stroke="#2D5C4B" stroke-width="4"/>
+    <path d="M70 70h40l20 20v20l-20 20H70Z" fill="none" stroke="#00AEEF" stroke-width="3"/>
+    <circle cx="90" cy="100" r="8" fill="#00AEEF"/>
+    
+    <text x="150" y="90" fill="#FFFDF7" font-family="serif" font-size="28" font-weight="bold">Nexio Tech</text>
+    <text x="150" y="115" fill="#00AEEF" font-family="monospace" font-size="11" letter-spacing="2">SUITE // 03</text>
+    
+    <rect x="50" y="170" width="260" height="40" rx="4" fill="#19382E" stroke="#2D5C4B" stroke-width="1"/>
+    <text x="70" y="195" fill="#FFFDF7" font-family="sans-serif" font-size="12">Circuit-Inspired SaaS System</text>
+  </g>
+
+  <!-- Spec Tag -->
+  <rect x="24" y="24" width="160" height="32" rx="3" fill="#2D5C4B"/>
+  <text x="36" y="44" fill="#FFFDF7" font-family="monospace" font-size="11" font-weight="bold">LIVIO 087 — PINE</text>
+</svg>
