@@ -19,6 +19,10 @@
       <span>SIG. 06/09</span>
       <span>JSN CREATIVE</span>
     </div>
+    <button class="mobile-nav-toggle" aria-label="Open menu">
+      <span>Menu</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
   </div>
 </div>
 
@@ -40,7 +44,8 @@
         <p style="margin:20px 0;">Livio Designs grew out of the same instinct that built the rest of JSN CREATIVE — that small and mid-sized businesses are usually offered two bad options: a cheap, forgettable logo, or an agency retainer priced for a company ten times their size. Livio exists as the option in between: studio-level rigor, without studio-level overhead.</p>
         <p>Every project runs through the same discipline as a real press proof — nothing ships until it's checked, aligned, and signed off. That's not a metaphor we use loosely. It's the actual standard.</p>
       </div>
-      <div class="panel founder-panel reveal" style="background:var(--chip-violet);">
+      <div class="panel founder-panel reveal">
+        <img src="img/about-studio.png" alt="Livio Designs studio press proof workspace" loading="lazy">
         <div class="fp-tag mono">LIVIO 099 — FOUNDING PRINCIPLE</div>
         <h3>"If it wouldn't survive a real press proof, it doesn't leave the studio."</h3>
       </div>
@@ -74,7 +79,7 @@
       <h2>One venture under JSN CREATIVE.</h2>
       <p>JSN CREATIVE is a multi-arm studio spanning education, freelancing, and technology. Livio Designs is its design and branding arm — working closely with sister ventures like Nexio Tech and Nexus Agents.</p>
     </div>
-    <a href="https://www.jsncreative.studio" target="_blank" rel="noopener" class="panel value-card reveal" style="display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:24px;">
+    <a href="https://www.jsncreative.studio" target="_blank" rel="noopener" class="panel value-card reveal" style="display:flex; flex-direction:row; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;">
       <div>
         <div class="v-num mono">PARENT STUDIO</div>
         <h3 style="margin:6px 0;">JSN CREATIVE</h3>
@@ -160,6 +165,30 @@
     <span>Chat</span>
   </a>
 </nav>
+
+<!-- Mobile Navigation Drawer Overlay -->
+<div class="mobile-drawer" aria-label="Mobile Navigation">
+  <div>
+    <div class="mobile-drawer-head">
+      <a href="index.html" class="topbar-logo" style="color:var(--stock);">LIVIO<span class="sub" style="color:rgba(255,253,247,0.5);">STUDIO NAV</span></a>
+      <button class="mobile-drawer-close">Close ✕</button>
+    </div>
+    <nav class="mobile-drawer-links">
+      <a href="index.html">Home <span class="num mono">01</span></a>
+      <a href="work.html">Selected Work <span class="num mono">02</span></a>
+      <a href="services.html">Services <span class="num mono">03</span></a>
+      <a href="process.html">Process <span class="num mono">04</span></a>
+      <a href="pricing.html">Pricing <span class="num mono">05</span></a>
+      <a href="about.html">About Studio <span class="num mono">06</span></a>
+      <a href="testimonials.html">Testimonials <span class="num mono">07</span></a>
+      <a href="contact.html">Contact Us <span class="num mono">08</span></a>
+    </nav>
+  </div>
+  <div class="mobile-drawer-footer">
+    <a href="https://wa.me/917204351696?text=Hi%20Livio%20Designs%2C%20I%20want%20to%20start%20a%20project." target="_blank" rel="noopener" class="btn btn-primary btn-block">Chat on WhatsApp →</a>
+  </div>
+</div>
+
 <script src="js/main.js" defer></script>
 </body>
 </html>

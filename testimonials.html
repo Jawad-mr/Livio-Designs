@@ -19,6 +19,10 @@
       <span>SIG. 07/09</span>
       <span>JSN CREATIVE</span>
     </div>
+    <button class="mobile-nav-toggle" aria-label="Open menu">
+      <span>Menu</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
   </div>
 </div>
 
@@ -38,48 +42,48 @@
   <div class="panel testi-card reveal">
     <p class="testi-quote">"Livio understood our bakery better than we could explain it ourselves. The packaging alone changed how customers talk about us."</p>
     <div class="testi-who">
-      <div class="testi-avatar" style="background:var(--chip-orange);">SC</div>
-      <div><div class="testi-name">Bakery owner</div><div class="testi-biz">Sweet Crumb Bakery</div></div>
+      <div class="testi-avatar"><img src="img/avatar-1.png" alt="Sarah C." loading="lazy"></div>
+      <div><div class="testi-name">Sarah C. — Bakery Owner</div><div class="testi-biz">Sweet Crumb Bakery</div></div>
     </div>
   </div>
       
   <div class="panel testi-card reveal">
-    <p class="testi-quote">"We came in wanting "just a logo" and left with an actual system — type, color, layout rules, all of it. Worth the extra weeks."</p>
+    <p class="testi-quote">"We came in wanting 'just a logo' and left with an actual system — type, color, layout rules, all of it. Worth the extra weeks."</p>
     <div class="testi-who">
-      <div class="testi-avatar" style="background:var(--ink);">SG</div>
-      <div><div class="testi-name">Founder</div><div class="testi-biz">ScholarsGuide</div></div>
+      <div class="testi-avatar"><img src="img/avatar-2.png" alt="Alex R." loading="lazy"></div>
+      <div><div class="testi-name">Alex R. — Founder</div><div class="testi-biz">ScholarsGuide</div></div>
     </div>
   </div>
       
   <div class="panel testi-card reveal">
     <p class="testi-quote">"The circuit concept for Nexio Tech wasn’t something we’d have thought to ask for, but it’s exactly right for what the product does."</p>
     <div class="testi-who">
-      <div class="testi-avatar" style="background:var(--chip-pine);">NX</div>
-      <div><div class="testi-name">Product lead</div><div class="testi-biz">Nexio Tech</div></div>
+      <div class="testi-avatar"><img src="img/avatar-3.png" alt="Vikram M." loading="lazy"></div>
+      <div><div class="testi-name">Vikram M. — VP of Product</div><div class="testi-biz">Nexio Tech</div></div>
     </div>
   </div>
       
   <div class="panel testi-card reveal">
     <p class="testi-quote">"Every round of feedback was taken seriously without turning into an endless revision loop. That balance is rare."</p>
     <div class="testi-who">
-      <div class="testi-avatar" style="background:var(--chip-violet);">NA</div>
-      <div><div class="testi-name">Founder</div><div class="testi-biz">Nexus Agents</div></div>
+      <div class="testi-avatar"><img src="img/avatar-4.png" alt="Elena R." loading="lazy"></div>
+      <div><div class="testi-name">Elena R. — Co-Founder</div><div class="testi-biz">Nexus Agents</div></div>
     </div>
   </div>
       
   <div class="panel testi-card reveal">
     <p class="testi-quote">"They treated our small publishing project with the same rigor as a much bigger client. That said a lot about the studio."</p>
     <div class="testi-who">
-      <div class="testi-avatar" style="background:var(--cyan);">DL</div>
-      <div><div class="testi-name">Content lead</div><div class="testi-biz">Dexterity Learn</div></div>
+      <div class="testi-avatar"><img src="img/avatar-1.png" alt="Marcus T." loading="lazy"></div>
+      <div><div class="testi-name">Marcus T. — Content Lead</div><div class="testi-biz">Dexterity Learn</div></div>
     </div>
   </div>
       
   <div class="panel testi-card reveal">
     <p class="testi-quote">"Livio built the identity system the entire JSN CREATIVE portfolio now runs on. It holds up across five completely different ventures."</p>
     <div class="testi-who">
-      <div class="testi-avatar" style="background:var(--yellow);">JC</div>
-      <div><div class="testi-name">Founder</div><div class="testi-biz">JSN CREATIVE</div></div>
+      <div class="testi-avatar"><img src="img/avatar-2.png" alt="JSN Team" loading="lazy"></div>
+      <div><div class="testi-name">JSN Directors</div><div class="testi-biz">JSN CREATIVE</div></div>
     </div>
   </div>
     </div>
@@ -160,6 +164,30 @@
     <span>Chat</span>
   </a>
 </nav>
+
+<!-- Mobile Navigation Drawer Overlay -->
+<div class="mobile-drawer" aria-label="Mobile Navigation">
+  <div>
+    <div class="mobile-drawer-head">
+      <a href="index.html" class="topbar-logo" style="color:var(--stock);">LIVIO<span class="sub" style="color:rgba(255,253,247,0.5);">STUDIO NAV</span></a>
+      <button class="mobile-drawer-close">Close ✕</button>
+    </div>
+    <nav class="mobile-drawer-links">
+      <a href="index.html">Home <span class="num mono">01</span></a>
+      <a href="work.html">Selected Work <span class="num mono">02</span></a>
+      <a href="services.html">Services <span class="num mono">03</span></a>
+      <a href="process.html">Process <span class="num mono">04</span></a>
+      <a href="pricing.html">Pricing <span class="num mono">05</span></a>
+      <a href="about.html">About Studio <span class="num mono">06</span></a>
+      <a href="testimonials.html">Testimonials <span class="num mono">07</span></a>
+      <a href="contact.html">Contact Us <span class="num mono">08</span></a>
+    </nav>
+  </div>
+  <div class="mobile-drawer-footer">
+    <a href="https://wa.me/917204351696?text=Hi%20Livio%20Designs%2C%20I%20want%20to%20start%20a%20project." target="_blank" rel="noopener" class="btn btn-primary btn-block">Chat on WhatsApp →</a>
+  </div>
+</div>
+
 <script src="js/main.js" defer></script>
 </body>
 </html>

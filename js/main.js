@@ -9,6 +9,36 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.querySelectorAll('[data-call]').forEach(el => el.setAttribute('href', 'tel:+917204351696'));
 
+  // Mobile drawer navigation toggle
+  const mobileToggle = document.querySelector('.mobile-nav-toggle');
+  const mobileDrawer = document.querySelector('.mobile-drawer');
+  const mobileClose = document.querySelector('.mobile-drawer-close');
+
+  function openDrawer() {
+    if (mobileDrawer) {
+      mobileDrawer.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeDrawer() {
+    if (mobileDrawer) {
+      mobileDrawer.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+  }
+
+  if (mobileToggle) mobileToggle.addEventListener('click', openDrawer);
+  if (mobileClose) mobileClose.addEventListener('click', closeDrawer);
+  if (mobileDrawer) {
+    mobileDrawer.addEventListener('click', (e) => {
+      if (e.target === mobileDrawer) closeDrawer();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('is-open')) closeDrawer();
+    });
+  }
+
   // Scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && revealEls.length) {
@@ -23,13 +53,16 @@ document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && regEls.length) {
     const io2 = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); io2.unobserve(e.target); } });
-    }, { threshold: 0.4 });
+    }, { threshold: 0.25 });
     regEls.forEach(el => io2.observe(el));
   } else regEls.forEach(el => el.classList.add('in-view'));
 
-  // Active dock item
-  const current = (window.location.pathname.split('/').pop() || 'index.html');
-  document.querySelectorAll('.dock-item[data-page]').forEach(el => {
-    if (el.getAttribute('data-page') === current) el.classList.add('active');
+  // Active dock & drawer link
+  let current = (window.location.pathname.split('/').pop() || 'index.html');
+  if (!current || current === '/') current = 'index.html';
+  document.querySelectorAll('.dock-item[data-page], .mobile-drawer-links a').forEach(el => {
+    const page = el.getAttribute('data-page') || el.getAttribute('href');
+    if (page === current) el.classList.add('active');
   });
 });
+
