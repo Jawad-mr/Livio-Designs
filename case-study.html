@@ -1,184 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sweet Crumb Bakery — Case Study — Livio Designs</title>
-<meta name="description" content="A full identity and point-of-sale system for Sweet Crumb Bakery, designed by Livio Designs.">
-<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-<link rel="stylesheet" href="css/core.css">
-<link rel="stylesheet" href="css/inner.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dexterity Brand System Case Study — Livio Designs</title>
+  <meta name="description" content="Detailed case study on Dexterity Brand Architecture and Identity System designed by Livio Designs under JSN CREATIVE.">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/inner.css">
 </head>
 <body>
-<div class="folio folio-tl">LIVIO / SIG.02.1</div>
-<div class="folio folio-tr">PROOF — 2026</div>
 
-<div class="wrap">
-  <div class="topbar">
-    <a href="index.html" class="topbar-logo">LIVIO<span class="sub">DESIGN &amp; BRANDING STUDIO</span></a>
-    <div class="topbar-meta mono">
-      <span>SIG. 02.1/09</span>
-      <span>JSN CREATIVE</span>
-    </div>
-    <button class="mobile-nav-toggle" aria-label="Open menu">
-      <span>Menu</span>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
-  </div>
-</div>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Livio Designs Home">
+        <span class="brand-name">LIVIO DESIGNS</span>
+        <span class="brand-sub">A VENTURE UNDER JSN CREATIVE</span>
+      </a>
 
-<div class="case-hero">
-  <div class="wrap">
-    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="work.html">Work</a> / Sweet Crumb Bakery</div>
-    <div class="chip"><span class="swatch" style="background:var(--chip-orange);"></span><span class="code">LIVIO 014</span><span class="name">Case Study</span></div>
-    <h1><span class="reg-wrap"><span class="reg-plate c" aria-hidden="true">Sweet Crumb Bakery</span><span class="reg-plate m" aria-hidden="true">Sweet Crumb Bakery</span><span class="reg-plate y" aria-hidden="true">Sweet Crumb Bakery</span><span class="reg-base">Sweet Crumb Bakery</span></span></h1>
-    <p style="max-width:600px; margin-top:24px; font-size:1.08rem;">A full identity and point-of-sale system for a neighborhood bakery that needed to feel handmade without looking unfinished.</p>
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="work.html" class="nav-link active">Work</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="testimonials.html" class="nav-link">Clients</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
 
-    <div class="grid case-meta-grid">
-      <div class="case-meta-item"><div class="l mono">Client</div><div class="v">Sweet Crumb Bakery</div></div>
-      <div class="case-meta-item"><div class="l mono">Scope</div><div class="v">Identity + POS + Print</div></div>
-      <div class="case-meta-item"><div class="l mono">Timeline</div><div class="v">6 weeks</div></div>
-      <div class="case-meta-item"><div class="l mono">Deliverables</div><div class="v">Logo, packaging, system</div></div>
-    </div>
-  </div>
-</div>
-
-<div class="wrap reveal">
-  <div class="panel case-full-art" style="overflow:hidden; max-height:480px; border:1.5px solid var(--ink);">
-    <img src="img/work-sweetcrumb.svg" alt="Sweet Crumb Bakery Packaging and Point of Sale Showcase" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
-  </div>
-</div>
-
-<section class="case-block">
-  <div class="wrap">
-    <div class="grid grid-2" style="gap:60px; align-items:start;">
-      <div>
-        <div class="chip"><span class="swatch" style="background:var(--cyan);"></span><span class="code">Brief</span></div>
-        <h2>The problem</h2>
-        <p style="margin-top:18px; font-size:1.02rem;">Sweet Crumb was operating out of a single storefront with no consistent visual identity — different packaging for every product line, hand-written price tags, and a paper-only order system. The owner wanted something that felt warm and handmade, but professional enough to support catering and bulk orders.</p>
+      <div class="header-cta">
+        <a href="https://wa.me/917204351696?text=Hi%20Livio%20Designs%2C%20I'm%20reading%20the%20Dexterity%20Case%20Study%20and%20want%20to%20discuss%20a%20branding%20project." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+          Chat on WhatsApp
+        </a>
       </div>
-      <div>
-        <div class="chip"><span class="swatch" style="background:var(--magenta);"></span><span class="code">Approach</span></div>
-        <h2>What we built</h2>
-        <p style="margin-top:18px; font-size:1.02rem;">We designed a wordmark built around a custom ligature in the "C" and "b," a warm two-color palette pulled from an actual proof of baked crust, and a packaging system that could be produced affordably at a local printer. Alongside the identity, we connected Livio's sister venture Nexus Agents to build a lightweight point-of-sale system so the brand extended into daily operations, not just the sign above the door.</p>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="work.html" class="mobile-nav-link active">Work</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Studio</a></li>
+      <li><a href="pricing.html" class="mobile-nav-link">Pricing &amp; Packages</a></li>
+      <li><a href="process.html" class="mobile-nav-link">Our Process</a></li>
+      <li><a href="testimonials.html" class="mobile-nav-link">Client Reviews</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Case Study Header -->
+  <section class="page-header">
+    <div class="wrap page-header-inner">
+      <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+        <span class="spec-tag spec-tag-blue">CASE STUDY</span>
+        <span class="spec-tag">BRAND IDENTITY &amp; LOGO</span>
+      </div>
+      <h1>Dexterity &bull; Complete Identity System &amp; Brand Guidelines</h1>
+      <p>How Livio Designs built a cohesive visual architecture, geometric mark, and print collateral suite for an industrial innovation consultancy.</p>
+    </div>
+  </section>
+
+  <!-- Hero Image Showcase -->
+  <div class="wrap" style="margin-top: 3rem; margin-bottom: 4rem;">
+    <div style="border-radius: var(--radius-xl); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-xl);">
+      <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=1600&q=80" alt="Dexterity Brand Identity Mockup" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover;">
+    </div>
+  </div>
+
+  <!-- Case Study Body -->
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap" style="max-width: 900px; margin: 0 auto;">
+      
+      <!-- Project Metadata Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 2rem; padding: 2rem; background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); margin-bottom: 3.5rem;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Client</div>
+          <div style="font-weight: 700; margin-top: 0.25rem;">Dexterity Systems</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Discipline</div>
+          <div style="font-weight: 700; margin-top: 0.25rem;">Brand Design &amp; Logo</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Timeline</div>
+          <div style="font-weight: 700; margin-top: 0.25rem;">3 Weeks</div>
+        </div>
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Output</div>
+          <div style="font-weight: 700; margin-top: 0.25rem;">Full Identity Guidelines</div>
+        </div>
+      </div>
+
+      <div style="font-size: 1.15rem; line-height: 1.75; color: var(--text-secondary);">
+        <h2 style="color: var(--text-primary); margin-bottom: 1.25rem;">The Challenge</h2>
+        <p style="margin-bottom: 2rem;">
+          Dexterity came to Livio Designs with a fragmented visual presence. Their collateral was inconsistently rendered across digital slide decks, print business cards, and social media channels. They required a unified identity system that signaled technical competence, geometric precision, and modern authority.
+        </p>
+
+        <h2 style="color: var(--text-primary); margin-bottom: 1.25rem;">The Solution</h2>
+        <p style="margin-bottom: 2rem;">
+          Under JSN Creative direction, we established a strict grid-based mark derived from interconnected geometric nodes. We developed a high-contrast color palette anchored in deep cobalt and neutral canvas stone, paired with Plus Jakarta Sans for headers and Space Mono for technical callouts.
+        </p>
+      </div>
+
+      <!-- Secondary Mockup Gallery Grid -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; margin-bottom: 3.5rem;">
+        <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-color);">
+          <img src="https://images.unsplash.com/photo-1542744094-3a31b272c490?auto=format&fit=crop&w=800&q=80" alt="Brand Guideline Manual spread" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+        </div>
+        <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-color);">
+          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Logo Mark Emboss detail" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Outcome Summary -->
+      <div style="padding: 2.5rem; background: var(--bg-dark); color: var(--text-light); border-radius: var(--radius-xl);">
+        <h3 style="color: var(--text-light); margin-bottom: 1rem;">Project Impact &amp; Deliverables</h3>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-light-muted);">
+          <li>&bull; Vector Primary &amp; Secondary Monogram Marks (SVG, EPS, PDF, PNG)</li>
+          <li>&bull; 36-Page Comprehensive Brand Guidelines Book</li>
+          <li>&bull; Print-Ready Business Card Suite &amp; Stationery Collateral</li>
+          <li>&bull; Social Media Kit (Avatar templates, cover banners, post grid rules)</li>
+        </ul>
+        <div style="margin-top: 2rem;">
+          <a href="https://wa.me/917204351696?text=Hi%20Livio%20Designs%2C%20I'm%20inspired%20by%20the%20Dexterity%20Case%20Study%20and%20want%20a%20similar%20brand%20identity." target="_blank" rel="noopener" class="btn btn-whatsapp">
+            Commission Similar Project on WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo">
+            <span class="brand-name">LIVIO DESIGNS</span>
+            <span class="brand-sub">VENTURE UNDER JSN CREATIVE</span>
+          </div>
+          <p class="footer-desc">
+            High-caliber design studio engineering brand identities, editorial graphics, logo marks, video edits, and poster systems.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#video-editing">Video Editing</a></li>
+            <li><a href="services.html#graphic-design">Graphic Design</a></li>
+            <li><a href="services.html#logo-design">Logo Design</a></li>
+            <li><a href="services.html#brand-design">Brand Identity</a></li>
+            <li><a href="services.html#poster-design">Poster Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Studio</h4>
+          <ul class="footer-links">
+            <li><a href="work.html">Portfolio</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="pricing.html">Pricing Packages</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="testimonials.html">Client Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Direct</h4>
+          <p style="color: var(--text-light-muted); font-size: 0.9rem; margin-bottom: 1rem;">Immediate inquiries via WhatsApp:</p>
+          <a href="https://wa.me/917204351696?text=Hi%20Livio%20Designs%2C%20I'd%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="btn btn-whatsapp style-full btn-sm">+91 7204351696</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Livio Designs. All rights reserved.</span>
+        <span>A creative venture under <strong>JSN CREATIVE</strong></span>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="case-block">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="chip"><span class="swatch" style="background:var(--chip-pine);"></span><span class="code">Result</span></div>
-      <h2>What changed.</h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="panel value-card"><div class="v-num mono">01</div><h4>Consistent shelf presence</h4><p>Every product line now shares one packaging system instead of five mismatched ones.</p></div>
-      <div class="panel value-card"><div class="v-num mono">02</div><h4>Faster daily operations</h4><p>Order-taking moved from paper tickets to a simple digital POS built alongside the identity.</p></div>
-      <div class="panel value-card"><div class="v-num mono">03</div><h4>Catering-ready branding</h4><p>The identity now scales confidently to bulk and corporate orders, not just walk-in counter sales.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="wrap reveal">
-    <h2>Want a system like this for your business?</h2>
-    <div class="cta-actions">
-      <a href="https://wa.me/917204351696?text=Hi%20Livio%20Designs%2C%20I%20saw%20the%20Sweet%20Crumb%20case%20study%20and%20want%20something%20similar%20for%20my%20business." target="_blank" rel="noopener" class="btn btn-primary">Start a project</a>
-      <a href="work.html" class="btn btn-ghost">Back to work</a>
-    </div>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="topbar-logo">LIVIO<span class="sub">DESIGN &amp; BRANDING STUDIO</span></a>
-        <p>A design and branding studio under JSN CREATIVE — identity, web, print, and motion, built with the same rigor as a real press proof.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Studio</h4>
-        <a href="work.html">Selected work</a>
-        <a href="services.html">Services</a>
-        <a href="process.html">Process</a>
-        <a href="testimonials.html">Testimonials</a>
-      </div>
-      <div class="footer-col">
-        <h4>Studio Info</h4>
-        <a href="about.html">About Livio</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Reach us</h4>
-        <a href="https://wa.me/917204351696?text=Hi%20Livio%20Designs%2C%20I%20have%20a%20question." target="_blank" rel="noopener">WhatsApp — +91 72043 51696</a>
-        <a href="tel:+917204351696">Call — +91 72043 51696</a>
-        <a href="mailto:jsn.creators@gmail.com">jsn.creators@gmail.com</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 LIVIO DESIGNS — a venture by <a href="https://www.jsncreative.studio" target="_blank" rel="noopener" style="opacity:1;">JSN CREATIVE</a></span>
-      <span>PROOF APPROVED — PRINTED ON SCREEN</span>
-    </div>
-  </div>
-</footer>
-
-<nav class="dock-nav" aria-label="Primary">
-  <a href="index.html" class="dock-item" data-page="index.html">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>
-    <span>Home</span>
-  </a>
-  <a href="work.html" class="dock-item" data-page="work.html">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M8 21h8M12 18v3"/></svg>
-    <span>Work</span>
-  </a>
-  <a href="services.html" class="dock-item" data-page="services.html">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09A1.65 1.65 0 0015.4 4.6a1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9c.2.4.51.73.9 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-    <span>Services</span>
-  </a>
-  <a href="process.html" class="dock-item" data-page="process.html">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
-    <span>Process</span>
-  </a>
-  <a href="pricing.html" class="dock-item" data-page="pricing.html">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-    <span>Pricing</span>
-  </a>
-  <a href="about.html" class="dock-item" data-page="about.html">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-    <span>Studio</span>
-  </a>
-  <a href="https://wa.me/917204351696?text=Hi%20Livio%20Designs%2C%20I%20want%20to%20start%20a%20project." target="_blank" rel="noopener" class="dock-item dock-cta">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-    <span>Chat</span>
-  </a>
-</nav>
-
-<!-- Mobile Navigation Drawer Overlay -->
-<div class="mobile-drawer" aria-label="Mobile Navigation">
-  <div>
-    <div class="mobile-drawer-head">
-      <a href="index.html" class="topbar-logo" style="color:var(--stock);">LIVIO<span class="sub" style="color:rgba(255,253,247,0.5);">STUDIO NAV</span></a>
-      <button class="mobile-drawer-close">Close ✕</button>
-    </div>
-    <nav class="mobile-drawer-links">
-      <a href="index.html">Home <span class="num mono">01</span></a>
-      <a href="work.html">Selected Work <span class="num mono">02</span></a>
-      <a href="services.html">Services <span class="num mono">03</span></a>
-      <a href="process.html">Process <span class="num mono">04</span></a>
-      <a href="pricing.html">Pricing <span class="num mono">05</span></a>
-      <a href="about.html">About Studio <span class="num mono">06</span></a>
-      <a href="testimonials.html">Testimonials <span class="num mono">07</span></a>
-      <a href="contact.html">Contact Us <span class="num mono">08</span></a>
-    </nav>
-  </div>
-  <div class="mobile-drawer-footer">
-    <a href="https://wa.me/917204351696?text=Hi%20Livio%20Designs%2C%20I%20want%20to%20start%20a%20project." target="_blank" rel="noopener" class="btn btn-primary btn-block">Chat on WhatsApp →</a>
-  </div>
-</div>
-
-<script src="js/main.js" defer></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
