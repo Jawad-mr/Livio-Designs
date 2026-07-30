@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-brand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAFAF9"/>
+      <stop offset="100%" stop-color="#E4E4E7"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#18181B" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="900" fill="url(#bg-brand)"/>
+
+  <!-- Architectural Grid Lines -->
+  <g stroke="#D4D4D8" stroke-width="1" opacity="0.6" stroke-dasharray="4 4">
+    <line x1="100" y1="0" x2="100" y2="900"/>
+    <line x1="350" y1="0" x2="350" y2="900"/>
+    <line x1="600" y1="0" x2="600" y2="900"/>
+    <line x1="850" y1="0" x2="850" y2="900"/>
+    <line x1="1100" y1="0" x2="1100" y2="900"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="750" x2="1200" y2="750"/>
+  </g>
+
+  <!-- Main Brand Identity Book Cover Spread -->
+  <rect x="150" y="120" width="540" height="660" rx="12" fill="#18181B" filter="url(#card-shadow)"/>
+  
+  <!-- Book Content / Cover Typography -->
+  <text x="210" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#1E40AF" letter-spacing="4">SYSTEM 01 / IDENTITY</text>
+  <text x="210" y="320" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="-1">LIVIO STUDIO</text>
+  <text x="210" y="365" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#71717A" letter-spacing="-1">GUIDELINES.</text>
+  
+  <line x1="210" y1="420" x2="630" y2="420" stroke="#27272A" stroke-width="2"/>
+  
+  <text x="210" y="470" font-family="'Space Mono', monospace" font-size="13" fill="#A1A1AA">VERSION 2.4 • PUBLISHED 2026</text>
+  <text x="210" y="495" font-family="'Space Mono', monospace" font-size="13" fill="#A1A1AA">CLIENT: DEXTERITY SYSTEMS</text>
+  <text x="210" y="520" font-family="'Space Mono', monospace" font-size="13" fill="#A1A1AA">AUTHOR: JSN CREATIVE</text>
+
+  <g transform="translate(210, 580)">
+    <!-- Swatches -->
+    <rect x="0" y="0" width="40" height="40" rx="6" fill="#18181B" stroke="#3F3F46"/>
+    <rect x="50" y="0" width="40" height="40" rx="6" fill="#1E40AF"/>
+    <rect x="100" y="0" width="40" height="40" rx="6" fill="#D97706"/>
+    <rect x="150" y="0" width="40" height="40" rx="6" fill="#FAFAF9" stroke="#E4E4E7"/>
+  </g>
+
+  <!-- Business Card Front Overlay (Floating Right) -->
+  <g transform="translate(720, 180)" filter="url(#card-shadow)">
+    <rect width="360" height="210" rx="10" fill="#FFFFFF" stroke="#E4E4E7"/>
+    <text x="40" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" fill="#18181B">DEXTERITY</text>
+    <text x="40" y="92" font-family="'Space Mono', monospace" font-size="10" fill="#1E40AF" letter-spacing="2">INDUSTRIAL SYSTEMS</text>
+    
+    <text x="40" y="145" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#18181B">Alex Morgan</text>
+    <text x="40" y="165" font-family="-apple-system, sans-serif" font-size="11" fill="#71717A">Design Director</text>
+    <text x="210" y="165" font-family="'Space Mono', monospace" font-size="11" fill="#18181B">+1 (555) 019-2831</text>
+  </g>
+
+  <!-- Business Card Back Overlay (Floating Lower Right) -->
+  <g transform="translate(760, 430)" filter="url(#card-shadow)">
+    <rect width="360" height="210" rx="10" fill="#1E40AF"/>
+    <!-- Logo Monogram Symbol -->
+    <polygon points="180,65 220,135 140,135" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+    <circle cx="180" cy="110" r="16" fill="#D97706"/>
+    <text x="180" y="175" font-family="'Space Mono', monospace" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">DEXTERITY.IO</text>
+  </g>
+</svg>
